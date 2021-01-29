@@ -10,6 +10,7 @@ class StartPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ahihi
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
@@ -28,10 +29,12 @@ class StartPage extends StatelessWidget {
                 else
                   return _buildGridView(context, snapshot.data);
             }
-          },),
+          },
+        ),
       ),
     );
   }
+
   Widget _buildGridView(BuildContext context, List<ServerInfo> serverInfo) {
     return MyText(info: serverInfo);
   }
